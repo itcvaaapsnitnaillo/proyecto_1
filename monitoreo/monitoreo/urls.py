@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from dispositivos.views import inicio, panel_dispositivos, mi_plantilla
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", mi_plantilla)
 ]

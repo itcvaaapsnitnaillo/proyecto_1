@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>titulo</title>
+</head>
+<body>
+<style>
+    .mucho{
+        background-color: red;
+    }
+    .normal{
+        background-color: green;
+    }
+</style>
+<table>
+    <tr><th>productos</th><th>consumo</th> <th>estado</th></tr>
+    {% for producto in productos%}
+    <tr class="{%if producto.estado%}normal{%else%}mucho{%endif%}">
+        <td>{{producto.producto}}</td><td>{{producto.consumo}}</td><td>{{producto.estado}}</td>
+    </tr>
+
+    {%endfor%}
+</table>
+
+</body>
+</html>

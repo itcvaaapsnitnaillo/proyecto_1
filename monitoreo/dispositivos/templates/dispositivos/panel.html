@@ -1,0 +1,6 @@
+<p>El consumo máximo es: {{ consumo_maximo }}</p>
+
+{% for dispositivo in dispositivos %}
+    <p>Nombre: {{ dispositivo.nombre }}</p>
+    <p>Consumo: {{ dispositivo.consumo }}</p>
+{% endfor %}
